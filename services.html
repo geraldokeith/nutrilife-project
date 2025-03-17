@@ -1,1 +1,71 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="icon" type="image/jpg" href="nutri.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about us.html">About Us</a></li>
+            <li><a href="Experts.html">Experts</a></li>
+
+            <li class="logo-item"><a href="index.html"><img src="nutri.png" alt="NutriLife Logo" class="nav-logo"></a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="meal-card" data-meal='{
+            "id": 1,
+            "name": "Grilled Chicken Salad",
+            "description": "Fresh greens with grilled chicken",
+            "price": 12.99,
+            "image": "chicken.webp"
+        }'>
+            <img src="chicken.webp" alt="Grilled Chicken Salad">
+            <h3>Grilled Chicken Salad</h3>
+            <p>$12.99</p>
+            <button class="order-btn">Order Now</button>
+        </div>
+
+        <div class="meal-card" data-meal='{
+            "id": 2,
+            "name": "Vegan Buddha Bowl",
+            "description": "Quinoa, avocado, and roasted veggies",
+            "price": 14.99,
+            "image": "buddha-bowl.jpg"
+        }'>
+            <img src="buddha-bowl.jpg" alt="Vegan Buddha Bowl">
+            <h3>Vegan Buddha Bowl</h3>
+            <p>$14.99</p>
+            <button class="order-btn">Order Now</button>
+        </div>
+    </div>
+
+    <!-- Details Modal -->
+    <div id="meal-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="meal-details"></div>
+            <div class="restaurant-selection">
+                <h4>Select Restaurant:</h4>
+                <select id="restaurant-select">
+                    <option value="rest1">Healthy Bites - Downtown</option>
+                    <option value="rest2">Green Plate - West Side</option>
+                    <option value="rest3">Fresh Eats - East End</option>
+                </select>
+                <button id="confirm-order">Confirm Order</button>
+            </div>
+        </div>
+    </div>
+
+   
+    <script src="script.js"></script>
+</body>
+</html>
