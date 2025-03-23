@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experts</title>
+    <link rel="icon" type="image/jpg" href="images/nutri.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about us.html">About Us</a></li>
+            <li><a href="Experts.html">Experts</a></li>
+            <li class="logo-item"><a href="index.html"><img src="images/nutri.png" alt="NutriLife Logo" class="nav-logo"></a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Find Your Health Expert</h1>
+    </header>
+
+    <section class="filters">
+        <input type="text" id="searchInput" placeholder="Search by name or specialty...">
+        <select id="specialtyFilter">
+            <option value="all">All Specialties</option>
+            <option value="Nutritionist">Nutritionist</option>
+            <option value="Endocrinologist">Endocrinologist</option>
+            <option value="Cardiologist">Cardiologist</option>
+            <option value="Clinical Nutritionists">Clinical Nutritionists</option>
+            <option value="Sports Nutritionists">Sports Nutritionists</option>
+            <option value="Pediatric Nutritionists">Pediatric Nutritionists</option>
+            <option value="Functional Medicine Practitioners">Functional Medicine Practitioners</option>
+            <option value="Gastroenterologists">Gastroenterologists</option>
+            <option value="Weight Loss Coaches">Weight Loss Coaches</option>
+            <option value="Mental Health & Wellness Coaches">Mental Health & Wellness Coaches</option>
+        </select>
+    </section>
+
+    <main class="experts-grid" id="expertsContainer"></main>
+
+    <div class="modal" id="bookingModal">
+        <div class="modal-content">
+            <span class="close-modal">×</span>
+            <h2>Book an Appointment</h2>
+            <form id="bookingForm">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="datetime-local" name="datetime" required>
+                <textarea name="message" placeholder="Reason for Appointment" required></textarea>
+                <button type="submit">Submit Booking</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="experts.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
