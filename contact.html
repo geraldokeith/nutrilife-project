@@ -3,15 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
     <title>Contact Us</title>
     <link rel="icon" type="image/jpg" href="nutri.png">
     <link rel="stylesheet" href="style.css">
+=======
+    <title>Contact us</title>
+    <link rel="icon" type="image/jpg" href="images/nutri.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+>>>>>>> b7fc2a2 (Your commit message here)
 </head>
 <body>
     <nav class="navbar">
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="services.html">Services</a></li>
+<<<<<<< HEAD
             <li><a href="contact.html">Contact</a></li>
             <li><a href="about us.html">About Us</a></li>
             <li><a href="Experts.html">Experts</a></li>
@@ -58,6 +67,134 @@
         </div>
       </div>
     </footer>
+=======
+            <li><a href="Experts.html">Experts</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li class="logo-item"><a href="index.html"><img src="images/nutri.png" alt="NutriLife Logo" class="nav-logo"></a></li>
+        </ul>
+    </nav>
+    
+   <!-- Hero Section -->
+   <section class="hero-contact">
+    <div class="hero-overlay">
+        <h1>Contact NutriLife</h1>
+        <p>We’re here to help you on your journey to a healthier life!</p>
+    </div>
+</section>
+
+<!-- Contact Form Section -->
+<section class="contact-form-section">
+    <h2>Send Us a Message</h2>
+    <form id="contactForm" novalidate>
+        <div class="form-group">
+            <label for="fullName">Full Name <span class="required">*</span></label>
+            <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+            <span class="error-message" id="fullNameError"></span>
+        </div>
+        <div class="form-group">
+            <label for="email">Email Address <span class="required">*</span></label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <span class="error-message" id="emailError"></span>
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+            <span class="error-message" id="phoneError"></span>
+        </div>
+        <div class="form-group">
+            <label for="subject">Subject <span class="required">*</span></label>
+            <select id="subject" name="subject" required>
+                <option value="" disabled selected>Select a subject</option>
+                <option value="General Inquiry">General Inquiry</option>
+                <option value="Support">Support</option>
+                <option value="Business Inquiry">Business Inquiry</option>
+            </select>
+            <span class="error-message" id="subjectError"></span>
+        </div>
+        <div class="form-group">
+            <label for="message">Message <span class="required">*</span> (max 500 characters)</label>
+            <textarea id="message" name="message" placeholder="Type your message here" maxlength="500" required></textarea>
+            <span class="char-count" id="charCount">0/500</span>
+            <span class="error-message" id="messageError"></span>
+        </div>
+        <div class="form-group captcha">
+            <label for="captcha">Verify: What is 3 + 4?</label>
+            <input type="number" id="captcha" name="captcha" placeholder="Enter answer" required>
+            <span class="error-message" id="captchaError"></span>
+        </div>
+        <button type="submit" class="submit-btn">Submit</button>
+    </form>
+    <div id="successMessage" class="success-message hidden">Thank you! Your message has been sent successfully.</div>
+</section>
+
+<!-- Map Section -->
+<section class="map-section">
+    <h2>Our Location</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.816536848757!2d32.57948931475747!3d0.31722399999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177dbbb24f7f039d%3A0x6f6f6f6f6f6f6f6f!2sKampala%20Rd%2C%20Kampala%2C%20Uganda!5e0!3m2!1sen!2sus!4v1677654321000" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</section>
+
+<!-- Get in Touch Section -->
+<section class="get-in-touch">
+    <h2>Get in Touch</h2>
+    <div class="contact-details">
+        <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <p>Universal Plaza, Kampala, Uganda</p>
+        </div>
+        <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <p><a href="mailto:info@nutrilife.com">info@nutrilife.com</a></p>
+        </div>
+        <div class="contact-item">
+            <i class="fas fa-phone-alt"></i>
+            <p><a href="tel:+61312345678">+61 3 1234 5678</a></p>
+        </div>
+    </div>
+</section>
+
+<!-- Call to Action Section -->
+<section class="cta-section">
+    <h2>Ready to Transform Your Health?</h2>
+    <p>Join NutriLife today and start your journey to a healthier you.</p>
+    <a href="Experts.html" class="cta-btn">Meet Our Experts</a>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-container">
+        <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="Experts.html">Experts</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+                <li><a href="about.html">About us</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Follow Us</h3>
+            <div class="social-links">
+                <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        <div class="footer-column">
+            <h3>Newsletter</h3>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </div>
+    <p>© 2025 NutriLife. All rights reserved.</p>
+</footer>
+
+    <script src="contact.js"></script>
+>>>>>>> b7fc2a2 (Your commit message here)
     <script src="script.js"></script>
 </body>
 </html>

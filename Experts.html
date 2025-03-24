@@ -1,17 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+<<<<<<< HEAD
+=======
+
+>>>>>>> b7fc2a2 (Your commit message here)
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Experts</title>
+<<<<<<< HEAD
     <link rel="icon" type="image/jpg" href="nutri.png">
     <link rel="stylesheet" href="style.css">
 </head>
+=======
+    <link rel="icon" type="image/jpg" href="images/nutri.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+>>>>>>> b7fc2a2 (Your commit message here)
 <body>
     <nav class="navbar">
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="services.html">Services</a></li>
+<<<<<<< HEAD
             <li><a href="contact.html">Contact</a></li>
             <li><a href="about us.html">About Us</a></li>
             <li><a href="Experts.html">Experts</a></li>
@@ -61,4 +75,93 @@
    
     <script src="script.js"></script>
 </body>
+=======
+            <li><a href="Experts.html">Experts</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li class="logo-item"><a href="index.html"><img src="images/nutri.png" alt="NutriLife Logo" class="nav-logo"></a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Find Your Health Expert</h1>
+    </header>
+
+    <section class="filters">
+        <input type="text" id="searchInput" placeholder="Search by name or specialty...">
+        <select id="specialtyFilter">
+            <option value="all">All Specialties</option>
+            <option value="Nutritionist">Nutritionist</option>
+            <option value="Endocrinologist">Endocrinologist</option>
+            <option value="Cardiologist">Cardiologist</option>
+            <option value="Clinical Nutritionists">Clinical Nutritionists</option>
+            <option value="Sports Nutritionists">Sports Nutritionists</option>
+            <option value="Pediatric Nutritionists">Pediatric Nutritionists</option>
+            <option value="Functional Medicine Practitioners">Functional Medicine Practitioners</option>
+            <option value="Gastroenterologists">Gastroenterologists</option>
+            <option value="Weight Loss Coaches">Weight Loss Coaches</option>
+            <option value="Mental Health & Wellness Coaches">Mental Health & Wellness Coaches</option>
+        </select>
+    </section>
+
+    <main class="experts-grid" id="expertsContainer"></main>
+
+    <div class="modal" id="bookingModal">
+        <div class="modal-content">
+            <span class="close-modal">×</span>
+            <h2>Book an Appointment</h2>
+            <form id="bookingForm">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="datetime-local" name="datetime" required>
+                <textarea name="message" placeholder="Reason for Appointment" required></textarea>
+                <button type="submit">Submit Booking</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Call to Action Section -->
+    <section class="cta-section">
+        <h2>Ready to Transform Your Health?</h2>
+        <p>Join NutriLife today and start your journey to a healthier you.</p>
+        <a href="Experts.html" class="cta-btn">Meet Our Experts</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="Experts.html">Experts</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                    <li><a href="about.html">About us</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Newsletter</h3>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <p>© 2025 NutriLife. All rights reserved.</p>
+    </footer>
+
+    <script src="experts.js"></script>
+    <script src="script.js"></script>
+</body>
+
+>>>>>>> b7fc2a2 (Your commit message here)
 </html>
